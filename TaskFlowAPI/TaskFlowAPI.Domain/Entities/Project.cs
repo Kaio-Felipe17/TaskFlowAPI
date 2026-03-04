@@ -1,0 +1,11 @@
+﻿using TaskFlowAPI.Domain.Common;
+
+namespace TaskFlowAPI.Domain.Entities;
+
+public class Project : BaseEntity
+{
+    public required string Name { get; set; }
+    public required string Description { get; set; }
+    public required Guid UserId { get; set; }
+    public User? User { get; set; }
+}
