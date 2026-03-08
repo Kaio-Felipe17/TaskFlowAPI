@@ -5,11 +5,11 @@ namespace TaskFlowAPI.Domain.Entities;
 
 public class TaskItem : BaseEntity
 {
-    public required string Title { get; set; }
+    public string Title { get; set; }
     public string? Description { get; set; }
-    public required DateTime DueDate { get; set; }
-    public required TaskItemStatus Status { get; set; }
-    public required TaskItemPriority Priority { get; set; }
-    public required Guid ProjectId { get; set; }
+    public DateTime DueDate { get; set; }
+    public TaskItemStatus Status { get; set; }
+    public TaskItemPriority Priority { get; set; }
+    public Guid ProjectId { get; set; }
     public Project? Project { get; set; }
 }
